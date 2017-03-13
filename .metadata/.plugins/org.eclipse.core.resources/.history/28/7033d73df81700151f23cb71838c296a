@@ -1,0 +1,26 @@
+
+ class Testcl implements TestIn {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.out.println(a);
+		
+		int i=25;
+		int j=10;
+		int resuke= ++i-j--%12>3?i++:--j;
+		System.out.println(resuke);
+		testvar(1)
+		te;stvar(1)
+		t;estvar(1)
+		;testvar(1)
+		
+		
+	}
+public void testvar(int i,String... args)
+{
+	}
+}

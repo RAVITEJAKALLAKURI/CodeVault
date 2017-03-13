@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;FirstSpring/src/applicatioaop.xml&apos; to &apos;applicationaop.xml&apos;" description="Rename resource &apos;applicatioaop.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/applicatioaop.xml" name="applicationaop.xml" stamp="1413098937274" updateReferences="true"/>
+</session>

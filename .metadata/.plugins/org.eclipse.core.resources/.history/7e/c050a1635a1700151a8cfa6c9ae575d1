@@ -1,0 +1,18 @@
+package com.poly;
+
+class Splender extends Bike{  
+    void run(){System.out.println("running safely with 60km");}  
+    static void mi(int i)
+    {
+    	System.out.println("sub");
+    }
+    public static void main(String args[]) throws ClassNotFoundException, InstantiationException, IllegalAccessException{  
+      Bike b = new Splender();//upcasting  
+      b.run(); 
+      b.mi("a");
+      Splender s=new Splender();
+      s.mi("abc");
+      
+      
+    }  
+  }  

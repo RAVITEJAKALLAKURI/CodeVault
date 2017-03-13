@@ -1,0 +1,21 @@
+
+public class B extends A {
+
+	
+	
+	static public void m1()
+	{
+		System.out.println("Sub m1");
+	}
+	private void m3()
+	{
+		
+	}
+	
+	public static void main(String[] s)
+	{
+		A a =new B();
+		a.m2();
+		a.m3();
+	}
+}

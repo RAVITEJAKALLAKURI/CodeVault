@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+
+public class TestTry 
+{
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc=new Scanner(System.in);
+		String[] input=sc.next().split("");
+		System.out.println(checknumber(sc.nextInt()));
+		
+		
+		
+	}
+
+	private static char[] checknumber(Integer next) {
+	
+		try
+		{
+			
+		}
+		
+		catch(Exception e)
+		{
+			
+			return 1;
+		}
+		finally
+		{
+			return 2;
+		}
+	}
+}

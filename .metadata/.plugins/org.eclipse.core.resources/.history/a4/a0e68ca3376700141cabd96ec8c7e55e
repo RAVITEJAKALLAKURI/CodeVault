@@ -1,0 +1,27 @@
+package com.stringPrograms;
+
+public class ReverseStringstack {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+public class Stack
+{
+	
+public Stack()
+{
+	
+  this.maxSize=maxSize;
+  this.top=-1;
+  stackArr=new Char[maxSize];
+
+}
+}
+
+
+}

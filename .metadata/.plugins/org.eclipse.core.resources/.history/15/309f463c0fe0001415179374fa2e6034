@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+
+public class TestTry 
+{
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println(checknumber(sc.nextInt()));
+		
+		
+		
+	}
+
+	private static int checknumber(Integer next) {
+	
+		try
+		{
+			if(next%0 ==1)
+			
+				System.out.println("123");
+		}
+		
+		catch(Exception e)
+		{
+			System.out.println("in Excep");
+			return 1;
+		}
+		finally
+		{
+			return 2;
+		}
+	}
+}

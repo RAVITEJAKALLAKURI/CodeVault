@@ -1,0 +1,79 @@
+package com.stringPrograms;
+
+import java.io.IOException;
+import java.util.Scanner;
+
+public class ReverseStringstack {
+
+	private static String input=null;;
+
+	/**
+	 * @param args
+	 */
+	 //String input =null;
+		
+		  public String doRev() {
+		      int stackSize = input.length(); 
+		      Stack theStack = new Stack(stackSize); 
+		      for (int i = 0; i < input.length(); i++) {
+		         char ch = input.charAt(i); 
+		         theStack.push(ch); 
+		      }
+		      output = "";
+		      while (!theStack.isEmpty()) {
+		         char ch = theStack.pop(); 
+		         output = output + ch; 
+		      }
+		      return output;
+		   }
+		   public static void main(String[] args) 
+		   throws IOException {
+		      String input = "Java Source and Support";
+		      String output;
+	
+		      output = theReverser.doRev();
+		      System.out.println("Reversed: " + output);
+		}
+		
+
+	
+
+public class Stack
+{
+	
+private int top;
+private char[] stackArr;
+private int maxSize;
+
+public Stack(int maxSize)
+{
+	
+  
+this.maxSize=maxSize;
+  this.top=-1;
+  stackArr=new char[maxSize];
+
+}
+
+public void push(char ch)
+{
+   stackArr[top++]=ch;
+   
+}
+public char pop()
+{
+  return stackArr[top--];	
+}
+public boolean isEmpty()
+{
+  return (top==-1);	
+}
+
+public char peek(int loc)
+{
+  return stackArr[loc];	
+}
+}
+
+
+}

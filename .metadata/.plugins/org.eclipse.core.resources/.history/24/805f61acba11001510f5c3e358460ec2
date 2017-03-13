@@ -1,0 +1,19 @@
+package com.stringPrograms;
+
+import java.util.Scanner;
+
+public class StringCircular {
+
+	/**
+	 * @param args
+	 */
+static String OrigInput=null;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc=new Scanner(System.in);
+		=sc.next();
+
+	}
+
+}

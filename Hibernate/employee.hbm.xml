@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<hibernate-mapping>
+
+<class name="com.Sample.Employee" table="employee">
+
+<id name="EmpID" column="EmpID" >
+
+<generator class="assigned"/>
+</id>
+
+<property name="EmpName" column="emp_name" type="integer"/>
+
+</class>
+
+</hibernate-mapping>

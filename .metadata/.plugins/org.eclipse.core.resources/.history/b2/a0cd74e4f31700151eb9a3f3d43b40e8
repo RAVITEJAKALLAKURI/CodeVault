@@ -1,0 +1,21 @@
+
+public class Overloading {
+	
+	byte b=(2);
+	
+	public Overloading() {
+		// TODO Auto-generated constructor stub
+		b++;
+		this.b++;
+	}
+	
+	public Overloading(Overloading t) {
+		// TODO Auto-generated constructor stub
+	}
+
+public static void main(String... args)
+{
+	
+	
+	}
+}

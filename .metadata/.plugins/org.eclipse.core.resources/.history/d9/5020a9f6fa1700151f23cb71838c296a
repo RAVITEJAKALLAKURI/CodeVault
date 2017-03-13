@@ -1,0 +1,29 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+
+
+
+public class Test {
+
+	
+	public  static void main(String[] args)
+	{
+		String[] as={"RAVI","TEJA"};
+		List<String> astr=Arrays.asList(as);
+		//testList(astr);
+		List<String> asr=new ArrayList<String>();
+		asr.add("BO");
+		asr.addAll(astr);
+		System.out.println(asr);
+		Test t=new Test();
+		//t.testList(astr);
+
+	}
+
+	private  void testList(List<Object> astr) {
+		// TODO Auto-generated method stub
+		
+	}
+}

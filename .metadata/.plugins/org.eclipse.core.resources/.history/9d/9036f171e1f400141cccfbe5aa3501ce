@@ -1,0 +1,17 @@
+package com.CPrograms;
+
+import java.util.ArrayList;
+
+public class FirstTwoBig {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		List<Integer> intlist=new ArrayList<String>();
+
+	}
+
+}

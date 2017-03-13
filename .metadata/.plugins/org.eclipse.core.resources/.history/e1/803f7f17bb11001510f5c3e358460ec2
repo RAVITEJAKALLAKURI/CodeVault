@@ -1,0 +1,38 @@
+package com.stringPrograms;
+
+import java.util.Scanner;
+
+public class StringCircular {
+
+	/**
+	 * @param args
+	 */
+static String origInput=null;
+static String input=null;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc=new Scanner(System.in);
+		origInput=sc.next();
+		input=sc.next();
+		
+		StringCircular src=new StringCircular();
+		src.iscircularreverse();
+
+	}
+	private void iscircularreverse() {
+		// TODO Auto-generated method stub
+		
+		String[] sp1=input.split("");
+		int origIndex=origInput.length()-1;
+		int temp=0;
+		for(int i=0;i<=sp1.length;i++)
+		{
+			if(i==0)
+				
+		}
+		
+		
+	}
+
+}

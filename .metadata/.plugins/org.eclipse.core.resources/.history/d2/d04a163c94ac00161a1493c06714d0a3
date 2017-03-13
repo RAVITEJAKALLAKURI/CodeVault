@@ -1,0 +1,79 @@
+package com.Sort;
+
+public class QuickSort {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int[] arr= {12,5,8,0,-7,9,2,3,90,11};
+		
+		quick(arr,0 ,arr.length-1);
+	System.out.println(arr.toString());	
+	}
+
+	private static void quick(int[] arr, int i, int length) {
+		// TODO Auto-generated method stub
+
+		int pivot;
+		if(i<length)   //i==high sublist has only one elemnt and i>high means no sublist
+		{
+			pivot =partiton(arr,i ,length);
+			
+			quick(arr,i,pivot-1);
+			quick(arr,pivot+1,length);
+			
+			
+		}
+		
+	}
+
+	private static int partiton(int[] arr, int low, int high) {
+		// TODO Auto-generated method stub
+int temp ,i ,j, pivot;
+i=low+1;
+j=high;
+
+pivot =arr[low];
+
+while(i<=j)
+{
+	
+
+while(arr[i]<pivot && (i<=high))
+	i++;
+	
+while(arr[j]> pivot)
+	j--;
+
+if(i<j)
+{
+    temp=arr[i];
+    arr[i]=arr[j];
+    arr[j]=temp;
+    i++;
+    j--;
+
+}
+else
+	i++;
+}
+
+arr[low]=arr[j];
+arr[j]=pivot;
+return j;
+
+}
+
+
+
+
+
+
+
+		
+	}
+
+

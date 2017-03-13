@@ -1,0 +1,49 @@
+package com.stringPrograms;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class CanPalindrome {
+
+	/**
+	 * @param args
+	 */
+	
+	static HashMap< Character, Integer> hm=new HashMap<Character,Integer>();
+	static int value;
+	public static  boolean temp;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		Scanner sc=new Scanner(System.in);
+		String input = sc.next();
+		
+		for(int i=0;i<input.length();i++)
+		{
+			if(hm.get(input.charAt(i))==null)
+				hm.put(input.charAt(i),1);
+			else
+			{
+				 value = hm.get(input.charAt(i));
+			hm.put(input.charAt(i),value);
+			
+			}
+		}
+		
+		for(int i=0;i<input.length();i++)
+		{
+			value=hm.get(input.charAt(i));
+		if(value==1 || value%2!=0)
+			if(temp)
+				temp=false;
+			else
+				System.out.println("cannot");
+		break;
+		
+		
+	}
+	
+System.out.println("Can");
+	}
+}

@@ -1,0 +1,118 @@
+package com.ds;
+
+
+ class ListNode
+{
+    int data;
+    ListNode next;
+}
+
+ class SingleLinkedList
+ {
+     private ListNode listNode;
+  
+     public SingleLinkedList()
+     {
+         listNode = new ListNode();
+     }
+  
+     public ListNode add(int data)
+     {
+         ListNode tempList = listNode;
+  
+         if ((tempList.next == null) && (tempList.data == 0))
+         {
+             tempList.data = data;
+  
+             return tempList;
+         }
+         else
+         {
+             while (tempList.next != null)
+             {
+                 tempList = tempList.next;
+             }
+  
+             ListNode newNode = new ListNode();
+             newNode.data = data;
+  
+             tempList.next = newNode;
+  
+             return newNode;
+         }
+     }
+  
+     public void printList()
+     {
+         ListNode tempNode = listNode;
+         while(tempNode != null)
+         {
+             System.out.print(tempNode.data+" -> ");
+             tempNode = tempNode.next;
+         }
+         System.out.println("null");
+     }
+  
+     public ListNode getList()
+     {
+         return listNode;
+     }
+  
+     public void setList(ListNode setListNode)
+     {
+         listNode = setListNode;
+     }
+ }
+ 
+ class DetectLoopInLinkedList
+ {
+     public DetectLoopInLinkedList()
+     {
+     }
+  
+     public boolean hasaLoop(ListNode loopedList)
+     {
+         boolean loopFound = false;
+         ListNode fastNode = loopedList;
+         ListNode slowNode = loopedList;
+  
+         while(fastNode.next.next != null)
+         {
+             slowNode = slowNode.next;
+             fastNode = fastNode.next.next;
+  
+             if(slowNode == fastNode)
+             {
+                 loopFound = true;
+                 break;
+             }
+         }
+  
+         return loopFound;
+     }
+  
+     public static void main(String[] args)
+     {
+         SingleLinkedList newList = new SingleLinkedList();
+         newList.add(1);
+         ListNode loopNode1=  newList.add(2);
+         ListNode loopNode = newList.add(90);
+         newList.add(4);
+         newList.add(5);
+         ListNode endNode = newList.add(6);
+         //  Creating a loop
+         endNode.next = loopNode1;
+  
+         ListNode loopedList = newList.getList();
+         DetectLoopInLinkedList detectLoopedList = new DetectLoopInLinkedList();
+  
+         if(detectLoopedList.hasaLoop(loopedList))
+         {
+             System.out.println("Loop is detected");
+         }
+         else
+         {
+             System.out.println("No Loop found");
+         }
+     }
+ }

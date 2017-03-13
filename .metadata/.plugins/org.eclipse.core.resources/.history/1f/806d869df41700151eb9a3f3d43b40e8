@@ -1,0 +1,28 @@
+
+public class Overloading {
+	
+	byte b=-2;
+	
+	public Overloading() {
+		// TODO Auto-generated constructor stub
+		b++;
+		this.b++;
+	}
+	
+	public Overloading(Overloading t) {
+		// TODO Auto-generated constructor stub
+		t.b++;
+		this.b++;
+		
+	}
+
+public static void main(String... args)
+{
+Overloading o=new Overloading();
+
+Overloading o2=new Overloading(o);
+System.out.println(o2.b-o1.b);
+
+	
+	}
+}

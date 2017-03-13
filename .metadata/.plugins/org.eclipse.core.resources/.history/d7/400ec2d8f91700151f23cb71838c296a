@@ -1,0 +1,18 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
+import com.sun.xml.internal.bind.v2.schemagen.xmlschema.List;
+
+
+public class Test {
+
+	
+	public  static void main(String[] args)
+	{
+		String[] as={"RAVI","TEJA"};
+		List<String> astr=Arrays.asList(as);
+		testList(astr);
+		
+		
+	}
+}

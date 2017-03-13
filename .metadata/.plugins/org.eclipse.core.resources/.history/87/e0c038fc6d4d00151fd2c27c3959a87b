@@ -1,0 +1,15 @@
+
+public enum TestEnum {
+
+	
+	 TestEnum()
+	{
+		
+	};
+	 
+	 public static void main(String[] args)
+	 {
+		 
+	 }
+	 
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+	http://www.springframework.org/schema/aop 
+	http://www.springframework.org/schema/aop/spring-aop-3.0.xsd ">
+
+<aop:aspectj-autoproxy />
+
+<bean id="xmlBean12" class="com.AspectJ.Xml.Operation"></bean>
+<bean id="trackAspect" class="com.AspectJ.Xml.TrackOperation"></bean>
+
+<aop:config>  
+  <aop:aspect id="myaspect12" ref="trackAspect" >  
+	        <aop:pointcut id="pointCutreturning"   expression="execution(* com.AspectJ.Xml.Operation.*(..))" />  
+     <aop:after-returning method="myadvice" returning="result" pointcut-ref="pointCutreturning" />   
+  </aop:aspect>  
+  </aop:config>
+
+<!-- aop:config>  
+  <aop:aspect id="myaspect" ref="trackAspect" >  
+       
+     <aop:pointcut id="pointCutAfter"   expression="execution(* com.AspectJ.Xml.Operation.*(..))" />  
+     <aop:after method="myadvice" pointcut-ref="pointCutAfter" />    
+  </aop:aspect>
+</aop:config> 
+	
+	<aop:config>  
+  <aop:aspect id="myaspect1" ref="trackAspect" >  
+	        <aop:pointcut id="pointCutBefore"   expression="execution(* com.AspectJ.Xml.Operation.*(..))" />  
+     <aop:before method="myadvice" pointcut-ref="pointCutBefore" />   
+  </aop:aspect>  
+  </aop:config-->
+
+	
+
+</beans>

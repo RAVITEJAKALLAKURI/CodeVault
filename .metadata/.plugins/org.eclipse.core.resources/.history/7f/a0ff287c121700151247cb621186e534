@@ -1,0 +1,107 @@
+import java.util.*;
+import java.util.Map.Entry;
+
+public class Stop {
+
+    private Long id;
+    private String name;
+
+    public Stop(Long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public String toString() {
+        return "Stop{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
+    }
+
+    private static class StopComparator implements Comparator<Stop> {
+
+
+        public int compare(Stop o1, Stop o2) {
+            return o2.getId().compareTo(o1.getId());
+        }
+    }
+    private static class IntComparator implements Comparator<Integer> {
+
+
+  
+
+		@Override
+		public int compare(Integer o1, Integer o2) {
+			// TODO Auto-generated method stub
+			if(o1.intValue()==o2.intValue())
+				return 1;
+			else
+				return -1;
+		}
+    }
+    public static void main(String[] args) {
+        Set<Stop> set = new TreeSet<Stop>(new StopComparator());
+        set.add(new Stop(102L, "name102"));
+        set.add(new Stop(66L, "name66"));
+        set.add(new Stop(66L, "name72"));
+        System.out.println(set);
+        
+        Set<Stop> set = new TreeSet<Stop>(new StopComparator()
+        
+        {set.add(new Stop(102L, "name102"));
+        set.add(new Stop(66L, "name66"));
+        set.add(new Stop(66L, "name72"))
+        });
+        System.out.println(set);
+        
+        Set<Integer> set1=new TreeSet<Integer>(new IntComparator());
+        set1.add(1);
+        set1.add(1);
+        set1.add(2);
+        set1.add(2);
+        System.out.println(set1);
+        Enumeration< Integer>ea =Collections.enumeration(set1);
+      //  Set<E> s=new HashSet<E>();
+        Map<Integer,Integer> mp=new HashMap<Integer, Integer>();
+        mp.put(1, 1);
+        mp.put(2, 1);
+        mp.put(3, 1);
+        mp.put(4, 1);
+        Set<Entry<Integer, Integer>> s1=mp.entrySet();
+        Iterator<Entry<Integer, Integer>> itr=s1.iterator();
+        
+        while(itr.hasNext())
+        {
+        	Map.Entry<Integer, Integer> mep=itr.next();
+        	System.out.println(mep.getKey() +mep.getValue());
+        }
+        System.out.println("1"+2+3);
+        System.out.println(1+2+"3");
+        System.out.println(1+"2"+3);
+        int line = 0;
+        System.out.println(Double.NaN ==Double.NaN  +Double.MIN_VALUE);
+        System.out.println(Double.MIN_VALUE >-0);
+        System.out.println(Math.min(Double.MIN_VALUE, 0.0d));
+        try {
+        System.out.println("line no " + ++line + ": " +(10/0.0));
+        System.out.println("line no " + ++line + ": " +(0/0.0));
+        System.out.println("line no " + ++line + ": " +(0.0/0));
+        System.out.println("line no " + ++line + ": " +(10/0));
+        
+        }
+        catch(Exception e)
+        {
+        System.out.println("Exception found in line no :" +line);
+        }
+        
+    }
+}

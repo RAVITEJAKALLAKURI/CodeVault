@@ -1,0 +1,14 @@
+ public class Employee extends Person {
+ String empID = "0000";
+ public Employee(String id) 
+ {
+	 super("kk");
+	 empID = id; 
+	 }
+ 
+ public static void main(String[]...a) {
+ }
+	 //public static void main(String... a) {
+
+	// public static void main(String[]... a) {
+ }

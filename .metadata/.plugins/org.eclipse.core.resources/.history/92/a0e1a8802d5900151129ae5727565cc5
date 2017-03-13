@@ -1,0 +1,21 @@
+import java.io.IOException;
+
+
+public class Super {
+
+
+public Number inte() throws IOException
+{
+	System.out.println("Super");
+	return 1;
+	}
+	
+protected	void m()
+	{
+		
+	}
+
+public void m(final int  x)
+{
+	}
+}

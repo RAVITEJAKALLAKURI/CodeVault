@@ -1,0 +1,12 @@
+import static java.lang.System.out;;
+public class HelloWorld {
+
+	/**
+	 * @param args
+	 */
+	 static public  void main(String... s) {
+		   // The comment below is no typo. 
+		   // \u000d out.println("Hello World!");
+		}
+
+}

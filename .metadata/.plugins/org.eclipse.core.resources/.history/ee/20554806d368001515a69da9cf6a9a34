@@ -1,0 +1,26 @@
+
+public class A {
+
+	
+
+	static public void m1()
+	{
+		System.out.println("Super m1");
+	}
+	
+	public void m2()
+	{
+		System.out.println("Super m2");
+		m1();
+	}
+	
+	private void m3()
+	{
+		
+	}
+
+	public void m4(char c) {
+		// TODO Auto-generated method stub
+		
+	}
+}

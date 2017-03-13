@@ -1,0 +1,15 @@
+
+public class TestEnum {
+
+	
+	 TestEnum()
+	{
+		
+	};
+	 
+	 public static void main(String[] args)
+	 {
+		 
+	 }
+	 
+}

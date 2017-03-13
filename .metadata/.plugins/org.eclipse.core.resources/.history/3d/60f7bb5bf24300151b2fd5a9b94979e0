@@ -1,0 +1,13 @@
+
+public class InitialisationError {
+
+	
+	static int a[];
+	
+	static
+	{
+		
+		a[0]=2;
+	}
+	
+}

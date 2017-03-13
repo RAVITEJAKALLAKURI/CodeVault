@@ -1,0 +1,15 @@
+
+public final  class TestEnum extends java.lang.Enum{
+
+	
+	 TestEnum()
+	{
+		
+	};
+	 
+	 public static void main(String[] args)
+	 {
+		 
+	 }
+	 
+}

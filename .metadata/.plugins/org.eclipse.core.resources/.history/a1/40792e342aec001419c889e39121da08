@@ -1,0 +1,5 @@
+package com.ThreadPrograms;
+
+public class ExtendThread extends Thread {
+
+}

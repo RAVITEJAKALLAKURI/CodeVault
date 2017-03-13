@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+
+import com.sun.xml.internal.bind.v2.schemagen.xmlschema.List;
+
+
+public class Test {
+
+	
+	public  static void main(String[] args)
+	{
+		List l=new ArrayList<E>();
+		
+	}
+}

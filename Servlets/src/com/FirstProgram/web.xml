@@ -1,0 +1,15 @@
+<!-- web.xml--> 
+<web-app>
+
+<servlet>
+<servlet-name>HelloServlet</servlet-name>
+<servlet-class>com.FirstProgram.HelloServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>HelloServlet</servlet-name>
+<url-pattern>/sayHello</url-pattern>
+
+</servlet-mapping>
+
+</web-app>

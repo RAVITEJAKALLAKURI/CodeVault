@@ -1,0 +1,37 @@
+
+public class SpecialCasesofFinally {
+
+ String s;
+
+public static void main(String[] args) throws Exception
+{
+	
+SpecialCasesofFinally s=new SpecialCasesofFinally();
+	System.out.println(m1()+s);
+
+}
+
+private static int m1() throws Exception {
+	try
+	{
+		
+	int j=10/0;
+	return 10;
+	}
+	catch(Exception e)
+	{
+		throw new Exception(e);
+		//return 20;
+		}
+
+	finally
+	{
+		return 30;
+		
+		}
+
+	}
+}
+
+
+

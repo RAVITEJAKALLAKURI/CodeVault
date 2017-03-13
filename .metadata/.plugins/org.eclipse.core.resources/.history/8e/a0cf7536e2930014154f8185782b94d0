@@ -1,0 +1,8 @@
+ public class Employee extends Person {
+ String empID = "0000";
+ public Employee(String id) 
+ {
+	 super("lanja");
+	 empID = id; 
+	 }
+ }

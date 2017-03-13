@@ -1,0 +1,20 @@
+import java.util.Arrays;
+import java.util.Collections;
+
+public class Boxer1{
+ Integer i;
+ int x;
+ public Boxer1(int y) {
+ //x = i+y;
+ System.out.println(x);
+ }
+ public static void main(String[] args) {
+ new Boxer1(new Integer(4));
+ Object [] myObjects = {new Integer(12),
+		 new String("foo"),
+		 new Integer(5),
+		new Boolean(true)
+		};
+		 Arrays.sort(myObjects);
+ }
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.CPrograms.Random.java&apos; to &apos;RandomTest.java&apos;&#x0D;&#x0A;- Original project: &apos;Test&apos;&#x0D;&#x0A;- Original element: &apos;com.CPrograms.Random.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.CPrograms.RandomTest.java&apos;" description="Rename compilation unit &apos;Random.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;com.CPrograms{Random.java" name="RandomTest.java" references="false" stamp="1420302919957" version="1.0"/>
+</session>

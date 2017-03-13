@@ -1,0 +1,21 @@
+
+public class A {
+
+	
+
+	static public void m1()
+	{
+		System.out.println("Super m1");
+	}
+	
+	public void m2()
+	{
+		System.out.println("Super m2");
+		m1();
+	}
+	
+	void m3()
+	{
+		
+	}
+}

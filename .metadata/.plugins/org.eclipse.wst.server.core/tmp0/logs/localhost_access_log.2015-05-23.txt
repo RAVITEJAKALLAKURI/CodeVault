@@ -1,0 +1,17 @@
+127.0.0.1 - - [23/May/2015:19:48:25 +0530] "GET / HTTP/1.1" 404 955
+0:0:0:0:0:0:0:1 - - [23/May/2015:19:48:28 +0530] "GET /RESTProgram/WEB-INF/classes/com/HelloRest/HelloRS.java HTTP/1.1" 404 952
+0:0:0:0:0:0:0:1 - - [23/May/2015:19:49:12 +0530] "GET /RESTProgram/restparameter/firstrsparam/getValues HTTP/1.1" 404 979
+0:0:0:0:0:0:0:1 - - [23/May/2015:19:49:30 +0530] "GET /RESTProgram/rest/firstrs/getstudent HTTP/1.1" 200 58
+127.0.0.1 - - [23/May/2015:19:49:35 +0530] "GET /RESTProgram/rest/firstrs/getstudent HTTP/1.1" 200 58
+0:0:0:0:0:0:0:1 - - [23/May/2015:19:49:35 +0530] "GET /RESTProgram/restparameter/firstrsparam/getValues HTTP/1.1" 404 979
+0:0:0:0:0:0:0:1 - - [23/May/2015:19:49:39 +0530] "GET /RESTProgram/restparameter/firstrsparam/getValues HTTP/1.1" 404 979
+0:0:0:0:0:0:0:1 - - [23/May/2015:19:49:46 +0530] "GET /RESTProgram/restparameter/firstrs/getvalues HTTP/1.1" 404 979
+0:0:0:0:0:0:0:1 - - [23/May/2015:19:49:50 +0530] "GET /RESTProgram/rest/firstrs/getStudent HTTP/1.1" 404 979
+0:0:0:0:0:0:0:1 - - [23/May/2015:19:52:10 +0530] "GET /RESTProgram/rest/firstrs/getStudent HTTP/1.1" 404 979
+127.0.0.1 - - [23/May/2015:19:52:13 +0530] "GET /RESTProgram/rest/firstrs/getstudent HTTP/1.1" 200 58
+0:0:0:0:0:0:0:1 - - [23/May/2015:19:52:17 +0530] "GET /RESTProgram/rest/firstrs/getStudent HTTP/1.1" 404 979
+0:0:0:0:0:0:0:1 - - [23/May/2015:19:52:26 +0530] "GET /RESTProgram/rest/firstrs/getStudent HTTP/1.1" 404 979
+0:0:0:0:0:0:0:1 - - [23/May/2015:19:52:26 +0530] "GET /favicon.ico HTTP/1.1" 404 988
+0:0:0:0:0:0:0:1 - - [23/May/2015:19:52:26 +0530] "GET /favicon.ico HTTP/1.1" 404 988
+0:0:0:0:0:0:0:1 - - [23/May/2015:19:52:41 +0530] "GET /RESTProgram/rest/firstrs/getstudent HTTP/1.1" 200 58
+0:0:0:0:0:0:0:1 - - [23/May/2015:19:53:06 +0530] "GET / HTTP/1.1" 404 955

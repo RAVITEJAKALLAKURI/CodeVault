@@ -1,0 +1,23 @@
+package com.CPrograms;
+
+import java.io.BufferedReader;
+import java.util.ArrayList;
+import java.util.List;
+
+public class FirstTwoBig {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		List<Integer> intlist=new ArrayList<Integer>();
+		BufferedReader br=new BufferedReader(System.in);
+		while(br.readLine.eq`)
+		intlist.add(
+				value);
+
+	}
+
+}

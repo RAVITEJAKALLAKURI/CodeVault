@@ -1,0 +1,42 @@
+
+
+
+class LastError<T>
+{
+	
+  private T lastError;
+  void setError(T t)
+  {
+	  lastError=t;
+	  System.out.println("lasterror:set");
+  }
+}
+
+class StrLastError<S extends CharSequence> extends LastError<String>
+{public StrLastError(S s) {
+	// TODO Auto-generated constructor stub
+}
+
+void setError(S s)
+
+{
+System.out.println("Strlast");	
+}
+	
+	}
+
+
+public class Test {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		StrLastError<String> srr=new StrLastError<String>("Error");
+		srr.setError("last");
+		
+	}
+
+}

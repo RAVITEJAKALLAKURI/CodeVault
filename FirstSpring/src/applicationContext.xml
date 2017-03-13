@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd  http://www.springframework.org/schema/aop   
+    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd ">
+
+<bean id="studentbean" class="com.firstSpring.Student">
+<property name="name" value="Vimal Jaiswal"></property>
+</bean>
+
+<bean id="ravibean" class="com.firstSpring.Student">
+<property name="name" value="ravi"></property>
+</bean>
+
+<bean id="tejabean" class="com.firstSpring.Student">
+<constructor-arg value="RAVI"/>
+</bean>
+
+<!--  bean id="tejabean1" class="com.DICon.Employee">
+<constructor-arg value="RAVI"/>
+</bean-->
+
+<bean id="addbean" class="com.DICon.Address">
+<constructor-arg value="India"/>
+<constructor-arg value="AP"/>
+<constructor-arg value="MDP"/>
+</bean>
+
+<bean id="tejabean2" class="com.DICon.Employee">
+
+<constructor-arg value="12" type="int"/>
+<constructor-arg value="RAVI"/>
+<constructor-arg><ref bean="addbean"/></constructor-arg>
+</bean>
+
+<bean id="b" class="com.AutowireMode.B"></bean>  
+<bean id="a" class="com.AutowireMode.A" autowire="byName"></bean>  
+
+<bean id="CLIList" class="com.CLIList.Question">
+<constructor-arg value="RAVI"></constructor-arg>
+<constructor-arg value="B.E"></constructor-arg>
+<constructor-arg>
+<list>
+<value>J2SE</value>
+<value>J2EE</value>
+</list>
+</constructor-arg>
+</bean>
+
+<bean id="addbean1" class="com.CLIDeOb.Address">
+<constructor-arg value="India1"/>
+<constructor-arg value="AP1"/>
+<constructor-arg value="MDP1"/>
+</bean>
+
+<bean id="CLIDeob" class="com.CLIDeOb.Question1">
+<constructor-arg value="RAVI"></constructor-arg>
+<constructor-arg value="B.E"></constructor-arg>
+<constructor-arg>
+<list>
+<ref bean="addbean1"></ref>
+
+</list>
+</constructor-arg>
+</bean>
+
+<bean id="CIMap" class="com.CIMap.User">
+<constructor-arg value="RAVI"/>
+<constructor-arg value="teja.gmail"/>
+</bean>
+
+<!--bean id="addCIMap" class="com.CIMap.Question2">
+<constructor-arg value="RAM"></constructor-arg>
+<constructor-arg value="MCA"></constructor-arg>
+<constructor-arg>
+<map>
+<entry key="addbean1" value="CIMap"></entry>
+</map>
+</constructor-arg>
+</bean-->
+
+<bean id="q" class="com.SIMap.Question">
+<property name="id" value="1"></property>
+<property name="name" value="What is Java?"></property>
+<property name="answers">
+<map>
+<entry key="Java is a programming language"  value="Sonoo Jaiswal"></entry>
+<entry key="Java is a Platform" value="Sachin Yadav"></entry>
+</map>
+</property>
+</bean>
+
+<bean id="answer1" class="com.javatpoint.Answer">
+<constructor-arg value="1"></constructor-arg>
+<constructor-arg value="Java is a Programming Language"></constructor-arg>
+<constructor-arg value="12/12/2001"></constructor-arg>
+</bean>
+<bean id="answer2" class="com.javatpoint.Answer">
+<constructor-arg value="2"></constructor-arg>
+<constructor-arg value="Java is a Platform"></constructor-arg>
+<constructor-arg value="12/12/2003"></constructor-arg>
+</bean>
+
+<bean id="user1" class="com.javatpoint.User">
+<constructor-arg value="1"></constructor-arg>
+<constructor-arg value="Arun Kumar"></constructor-arg>
+<constructor-arg value="arun@gmail.com"></constructor-arg>
+</bean>
+<bean id="user2" class="com.javatpoint.User">
+<constructor-arg value="2"></constructor-arg>
+<constructor-arg value="Varun Kumar"></constructor-arg>
+<constructor-arg value="Varun@gmail.com"></constructor-arg>
+</bean>
+
+<bean id="qs" class="com.javatpoint.Question">
+<constructor-arg value="1"></constructor-arg>
+<constructor-arg value="What is Java?"></constructor-arg>
+<constructor-arg>
+<map>
+<entry key-ref="answer1" value-ref="user1"></entry>
+<entry key-ref="answer2" value-ref="user2"></entry>
+</map>
+</constructor-arg>
+</bean>
+<bean id="SINSM" class="com.SINonStringMap.Question">
+<property name="name" value="RAVI"/>
+<property name="ans">
+<map>
+<entry key-ref="SIAddress" value-ref="SIUser"/>
+</map>
+</property>
+</bean>
+
+<bean id="SIUser" class="com.SINonStringMap.User">
+<property name="lan" value="Tel"/>
+</bean>
+
+<bean id="SIAddress" class="com.SINonStringMap.Answer">
+<property name="ans" value="Tel"/>
+</bean>
+
+<bean id="HIAddress" class="com.DIInhBean.Address">
+<constructor-arg value="India1"/>
+<constructor-arg value="AP1"/>
+<constructor-arg value="MDP1"/>
+</bean>
+<bean id="e1" class="com.DIInhBean.Employee">
+<constructor-arg value="andhra"/>
+<constructor-arg value="andhra1"/>
+
+</bean>
+<bean id="InBean" class="com.DIInhBean.Employee" parent="e1">
+<constructor-arg ref="HIAddress"/>
+</bean>
+
+<bean id="obj" class="com.AspectJ.A"></bean>
+<bean id="ba" class="com.AspectJ.BeforeAdvice"></bean>
+<bean id="Aa" class="com.AspectJ.AfterAdvice"></bean>
+<bean id="Ar" class="com.AspectJ.AroundAdvice"></bean>
+<bean id="ta" class="com.AspectJ.ThrowsAdvice"></bean>
+<bean id="proxy" class="org.springframework.aop.framework.ProxyFactoryBean">  
+<property name="target" ref="obj"></property>  
+<property name="interceptorNames">  
+<list>  
+<value>ba</value>  
+<value>Aa</value>
+<value>Ar</value>
+<value>ta</value>
+</list>  
+</property>  
+</bean>  
+
+<bean id="annoBean" class="com.AspectJ.Anno.Operation"></bean>
+<bean id="trackBean" class="com.AspectJ.Anno.TrackOperation"></bean>
+<bean class="org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator"></bean>
+
+<bean id="ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource">  
+<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />  
+<property name="url" value="jdbc:oracle:thin:@localhost:1521:ORCL" />  
+<property name="username" value="system" />  
+<property name="password" value="welcome" />  
+</bean>  
+  
+<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">  
+<property name="dataSource" ref="ds"></property>  
+</bean>  
+  
+<bean id="jdbcBean" class="com.SpringJDBC.EmployeeDAO">  
+<property name="jdbctemplate" ref="jdbcTemplate"></property>  
+</bean>
+
+
+</beans>

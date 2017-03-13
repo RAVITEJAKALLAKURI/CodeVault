@@ -1,0 +1,18 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
+
+
+
+public class Test {
+
+	
+	public  static void main(String[] args)
+	{
+		String[] as={"RAVI","TEJA"};
+		List<Strinfg> astr=Arrays.asList(as);
+		testList(astr);
+		
+		
+	}
+}

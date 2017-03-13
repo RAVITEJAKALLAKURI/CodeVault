@@ -1,0 +1,15 @@
+
+public class TestEnum extends enum{
+
+	
+	 TestEnum()
+	{
+		
+	};
+	 
+	 public static void main(String[] args)
+	 {
+		 
+	 }
+	 
+}

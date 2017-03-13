@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/OSGi%Minimum-1.2"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.6.0_29"/>
+	<classpathentry exported="true" kind="lib" path="H:/Web Developers Kit/SERVLETAPI3.0/javax.servlet.jar"/>
+	<classpathentry exported="true" kind="lib" path="H:/Web Developers Kit/tomcatnew/Tomcat7/apache-tomcat-7.0.27/lib/servlet-api.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

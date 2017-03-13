@@ -1,0 +1,17 @@
+
+public class Overloading {
+	
+	
+	
+	public Overloading() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Overloading(Overloading t) {
+		// TODO Auto-generated constructor stub
+	}
+
+public static void main(String... args)
+{
+	}
+}

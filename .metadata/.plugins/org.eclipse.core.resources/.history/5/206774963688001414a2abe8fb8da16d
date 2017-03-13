@@ -1,0 +1,20 @@
+package com.stringPrograms;
+
+import java.util.HashMap;
+
+public class CanPalindrome {
+
+	/**
+	 * @param args
+	 */
+	
+	HashMap< char, Integer> hm=new HashMap<char,Integer>();
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		
+		
+	}
+
+}

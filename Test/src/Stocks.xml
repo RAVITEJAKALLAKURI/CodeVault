@@ -1,0 +1,20 @@
+ <stocks>
+       <stock>
+              <symbol>Citibank</symbol>
+              <price>100</price>
+              <quantity>1000</quantity>
+       
+       <stock>
+              <symbol>Axis bank</symbol>
+              <price>90</price>
+              <quantity>2000</quantity>
+			 
+       </stock>
+	   
+	   </stock>
+	    
+			  <temp>
+			  <name>RAVI</name>
+			  </temp>
+</stocks>
+

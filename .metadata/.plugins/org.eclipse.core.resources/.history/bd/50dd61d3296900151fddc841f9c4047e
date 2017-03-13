@@ -1,0 +1,8 @@
+
+public enum enumTest {
+
+	
+	high,low,mid;
+	
+	new enumTest();
+}
