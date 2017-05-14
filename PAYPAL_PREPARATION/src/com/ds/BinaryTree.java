@@ -91,7 +91,7 @@ this.left.traverseInOrder();
 
 }
 
-System.out.println( this.data );
+System.out.print( this.data +":");
 
 if( this.right != null ) {
 
