@@ -101,7 +101,7 @@ package com.ds;
          ListNode loopNode2=  newList.add(5);
          ListNode endNode = newList.add(6);
          //  Creating a loop
-        // endNode.next = loopNode3;
+        endNode.next = loopNode3;
   
          ListNode loopedList = newList.getList();
          DetectLoopInLinkedList detectLoopedList = new DetectLoopInLinkedList();
@@ -116,10 +116,9 @@ package com.ds;
          }
          
          ListNode loopDetectionNode = detectLoopedList.returnLoopDetectionNode(loopedList);
-//         int loopLength = detectLoopedList.getLoopLength(loopDetectionNode);
-//         int lengthTillMergingPoint = detectLoopedList.getMergingPointLength(loopedList, loopDetectionNode);
-//         int lengthOfList = loopLength + lengthTillMergingPoint;
-//        // removeLoop1(loopDetectionNode, loopedList);
+        int loopLength = detectLoopedList.getLoopLength(loopDetectionNode);
+         int lengthTillMergingPoint = detectLoopedList.getMergingPointLength(loopedList, loopDetectionNode);         int lengthOfList = loopLength + lengthTillMergingPoint;
+        removeLoop1(loopDetectionNode, loopedList);
 //      ListNode correctNode= removeLoop1(loopDetectionNode, loopedList);
   //    printList(correctNode);
 //      SingleLinkedList newList1 = new SingleLinkedList();

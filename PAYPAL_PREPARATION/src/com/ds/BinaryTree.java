@@ -5,7 +5,7 @@ package com.ds;
 public class BinaryTree {
 
 
-private int data;
+public  int data;
 
 public BinaryTree left;
 
